@@ -6,7 +6,7 @@
     <variable id="dfrA%~g.p0MP]|t^.E?r">prediction</variable>
     <variable id="juN97HvuG$Dfo{/`P@H)">lastDigit</variable>
     <variable id="*f-oynV`_!w{t?n2,w8I">Martingale</variable>
-    <variable id="~/GJU!zCc33g]0~P?/2B">2ndLastDigit</variable>
+    <variable id="~/GJU!zCc33g]0~P?/2B">3rdLastDigit</variable>
   </variables>
   <block type="trade_definition" id="jAE*HN`VGkiA32W#~$g." deletable="false" x="0" y="60">
     <statement name="TRADE_OPTIONS">
@@ -93,7 +93,7 @@
           <block type="timeout" id="j`Awz?e.!=)FG=2II-+O">
             <statement name="TIMEOUTSTACK">
               <block type="variables_set" id="nC`CFn2(Q:M-}1pb}pf3">
-                <field name="VAR" id="juN97HvuG$Dfo{/`P@H)">lastDigit</field>
+                <field name="VAR" id="juN97HvuG$Dfo{/`P@H)">3rdLastDigit</field>
                 <value name="VALUE">
                   <block type="lists_getIndex" id=")m=54_tqQr9n#{=|.L|;">
                     <mutation xmlns="http://www.w3.org/1999/xhtml" statement="false" at="true"></mutation>
@@ -154,7 +154,7 @@
                                 <field name="NOTIFICATION_SOUND">silent</field>
                                 <value name="MESSAGE">
                                   <shadow type="text" id="@Oh2_D@Z@wwfeK$#_b%a">
-                                    <field name="TEXT">last and second last digit :</field>
+                                    <field name="TEXT">third last digit and second last digit :</field>
                                   </shadow>
                                 </value>
                                 <next>
@@ -166,7 +166,7 @@
                                         <field name="TEXT">abc</field>
                                       </shadow>
                                       <block type="variables_get" id="V3{%@4uH120A,##]5/jp">
-                                        <field name="VAR" id="juN97HvuG$Dfo{/`P@H)">lastDigit</field>
+                                        <field name="VAR" id="juN97HvuG$Dfo{/`P@H)">3rdlastDigit</field>
                                       </block>
                                     </value>
                                     <next>
@@ -191,7 +191,7 @@
                                                     <field name="OP">EQ</field>
                                                     <value name="A">
                                                       <block type="variables_get" id="dM4q9_BRM[nu`wju.)LZ">
-                                                        <field name="VAR" id="juN97HvuG$Dfo{/`P@H)">lastDigit</field>
+                                                        <field name="VAR" id="juN97HvuG$Dfo{/`P@H)">3rdlastDigit</field>
                                                       </block>
                                                     </value>
                                                     <value name="B">
@@ -223,7 +223,7 @@
                                                 <field name="VAR" id="dfrA%~g.p0MP]|t^.E?r">prediction</field>
                                                 <value name="VALUE">
                                                   <block type="variables_get" id="=$$h3mPN;mloO7a;@rC?">
-                                                    <field name="VAR" id="juN97HvuG$Dfo{/`P@H)">lastDigit</field>
+                                                    <field name="VAR" id="juN97HvuG$Dfo{/`P@H)">3rdlastDigit</field>
                                                   </block>
                                                 </value>
                                                 <next>
